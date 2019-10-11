@@ -193,13 +193,21 @@ line-height: 32px;
 font: #262626;
 }
 
+.table th {
+    vertical-align: middle;
+    border-top: none;
+}
+
+th.alignleft, td.alignleft{
+  text-align: right!important;
+}
+
+
 div ul{
 font-family: 'Ubuntu', sans-serif;
 font-style: normal;
 font-weight: bold;
-
 }
-
 
     </style>
 
@@ -281,11 +289,11 @@ font-weight: bold;
                     
                     <div class="container">
                       <h5>INVOICE</h5>
-                      <div class="mb-4 container row">
+                      <div class="container row">
                         <input class="form-control sortInvoiceTable" type="text" data-table="table" placeholder="All" aria-label="Search">
                       </div>
                       <div class="table-responsive-md">           
-                          <table class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                          <table class="table table-striped table-borderedless table-hover" cellspacing="0" width="100%">
                             <thead>
                               <tr>
                                 <th>Invoice</th>
@@ -293,7 +301,7 @@ font-weight: bold;
                                 <th>Project</th>
                                 <th>Issued</th>
                                 <th>Status</th>
-                                <th>Bill</th>
+                                <th style="width:40%" class="alignleft">Status</th>
                               </tr>
                             </thead>
                             <tbody id="invoiceTable">
@@ -303,7 +311,7 @@ font-weight: bold;
                                 <td>Branding</td>
                                 <td>01/10/19</td>
                                 <td><span class="badge badge-button badge-success"> Paid </span></td>
-                                <td>US$4,200.00</td>
+                                <td style="width:40%"class="alignleft">US$4,200.00</td>
                               </tr>
                               <tr>
                                   <td>2</td>
@@ -311,7 +319,7 @@ font-weight: bold;
                                   <td>Glacier Fintech App</td>
                                   <td>02/10/19</td>
                                   <td><span class="badge badge-button badge-primary"> Sent </span></td>
-                                  <td>US$8,800.00</td>
+                                  <td style="width:40%"class="alignleft">US$8,800.00</td>
                                 </tr>
                             </tbody>
                           </table>
@@ -392,7 +400,7 @@ font-weight: bold;
 
   })();
 
-  TableFilter.init();
+    TableFilter.init();
 })();
 
     </script>
