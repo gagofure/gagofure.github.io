@@ -16,3 +16,9 @@
 .flaticon-approval:before {
 	content: "\e006";
 }
+.flaticon-question:before {
+	content: "\e007";
+}
+.flaticon-notification:before {
+	content: "\e008";
+}
